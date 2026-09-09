@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northwold Hotel — A Serene Escape in Sotuom, Accra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1.1">
+</head>
+
+<body class="bg-cream text-navy antialiased">
+
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-full bg-gold flex items-center justify-center">
+          <span class="font-serif text-navy text-xl font-bold">N</span>
+        </div>
+        <div class="leading-tight">
+          <div class="font-serif text-xl font-semibold tracking-wide nav-text">Northwold</div>
+          <div class="text-[10px] uppercase tracking-[0.2em] nav-subtext">Hotel · Accra</div>
+        </div>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#about" class="nav-link hover:text-gold transition">About</a></li>
+        <li><a href="#amenities" class="nav-link hover:text-gold transition">Amenities</a></li>
+        <li><a href="#suites" class="nav-link hover:text-gold transition">Suites</a></li>
+        <li><a href="#testimonials" class="nav-link hover:text-gold transition">Reviews</a></li>
+        <li><a href="#contact" class="nav-link hover:text-gold transition">Contact</a></li>
+      </ul>
+      <button id="openBooking"
+        class="book-btn bg-gold text-navy px-6 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-navy hover:text-gold transition-all duration-300 shadow-lg flex items-center gap-2">
+        <i data-lucide="calendar-check" class="w-4 h-4"></i>
+        Book Now
+      </button>
+    </div>
+  </nav>
+
+  <button id="floatingBook"
+    class="fixed bottom-6 right-6 z-40 bg-gold text-navy w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform md:hidden">
+    <i data-lucide="calendar-check" class="w-6 h-6"></i>
+  </button>
+
+  <section id="hero" class="relative h-screen min-h-[700px] overflow-hidden">
+    <div class="absolute inset-0 hero-bg"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy/80"></div>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 text-white">
+      <div
+        class="hero-tag mb-6 inline-block px-5 py-2 border border-gold/50 rounded-full text-gold text-xs uppercase tracking-[0.3em]">
+        ★ Premium Hospitality · Sotuom, Accra
+      </div>
+      <h1 class="hero-title font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight max-w-5xl">
+        Discover Your<br>
+        <span class="italic text-gold">Serene Escape</span><br>
+        in the Heart of Sotuom
+      </h1>
+      <p class="hero-sub mt-8 max-w-2xl text-lg md:text-xl font-light text-white/85 leading-relaxed">
+        Where modern luxury meets timeless Ghanaian hospitality. A sanctuary crafted for the discerning traveler.
+      </p>
+      <div class="hero-cta mt-10 flex flex-col sm:flex-row gap-4">
+        <button onclick="document.getElementById('openBooking').click()"
+          class="bg-gold text-navy px-8 py-4 rounded-full font-semibold tracking-wide hover:bg-white transition-all duration-300 shadow-xl flex items-center justify-center gap-2">
+          <i data-lucide="calendar-check" class="w-5 h-5"></i>
+          Book Your Stay
+        </button>
+        <a href="#suites"
+          class="border border-white/40 backdrop-blur-sm px-8 py-4 rounded-full font-semibold tracking-wide hover:bg-white hover:text-navy transition-all duration-300 flex items-center justify-center gap-2">
+          Explore Our Suites
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+      <div
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 text-xs uppercase tracking-widest">
+        <span>Scroll</span>
+        <div class="w-px h-12 bg-gradient-to-b from-gold to-transparent animate-pulse"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats" class="py-16 bg-navy text-white">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="stat-item">
+        <div class="font-serif text-4xl md:text-5xl text-gold">4.2★</div>
+        <div class="mt-2 text-sm uppercase tracking-widest text-white/70">Google Rated</div>
+      </div>
+      <div class="stat-item">
+        <div class="font-serif text-4xl md:text-5xl text-gold">128+</div>
+        <div class="mt-2 text-sm uppercase tracking-widest text-white/70">Verified Reviews</div>
+      </div>
+      <div class="stat-item">
+        <div class="font-serif text-4xl md:text-5xl text-gold">24/7</div>
+        <div class="mt-2 text-sm uppercase tracking-widest text-white/70">Pool Access</div>
+      </div>
+      <div class="stat-item">
+        <div class="font-serif text-4xl md:text-5xl text-gold">100%</div>
+        <div class="mt-2 text-sm uppercase tracking-widest text-white/70">Serenity</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <div class="text-gold uppercase tracking-[0.3em] text-xs mb-4">About Northwold</div>
+        <h2 class="font-serif text-4xl md:text-6xl font-light leading-tight text-navy">An Oasis of <span
+            class="italic text-gold">Tranquility</span></h2>
+        <p class="mt-8 text-lg text-navy/75 leading-relaxed font-light">
+          Tucked away from the vibrant energy of Accra, Northwold Hotel stands as a premier destination for travelers
+          seeking a peaceful retreat without compromising on modern convenience. Located in the serene neighborhood of
+          Sotuom, our hotel is meticulously designed to be more than just a place to sleep—it is a destination for
+          rejuvenation.
+        </p>
+        <p class="mt-4 text-lg text-navy/75 leading-relaxed font-light">
+          From the minimalist elegance of our architecture to the lush surroundings that invite calm, we cater to the
+          discerning guest. Whether for a high-powered business trip, a romantic getaway, or an unforgettable event, our
+          team ensures every moment is defined by comfort.
+        </p>
+        <div class="mt-10 grid grid-cols-2 gap-6">
+          <div class="flex items-start gap-3">
+            <i data-lucide="leaf" class="w-6 h-6 text-gold flex-shrink-0 mt-1"></i>
+            <div>
+              <div class="font-semibold text-navy">Lush Setting</div>
+              <div class="text-sm text-navy/60">Nature-inspired design</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i data-lucide="award" class="w-6 h-6 text-gold flex-shrink-0 mt-1"></i>
+            <div>
+              <div class="font-semibold text-navy">Award Service</div>
+              <div class="text-sm text-navy/60">Hospitality excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-4">
+        <div class="space-y-4">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80"
+            class="rounded-2xl shadow-xl w-full h-64 object-cover hover-zoom" alt="Hotel">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80"
+            class="rounded-2xl shadow-xl w-full h-48 object-cover hover-zoom" alt="Pool">
+        </div>
+        <div class="space-y-4 mt-8">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80"
+            class="rounded-2xl shadow-xl w-full h-48 object-cover hover-zoom" alt="Lobby">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80"
+            class="rounded-2xl shadow-xl w-full h-64 object-cover hover-zoom" alt="Suite">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="amenities" class="py-24 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <div class="text-gold uppercase tracking-[0.3em] text-xs mb-4">Amenities & Services</div>
+        <h2 class="font-serif text-4xl md:text-6xl font-light text-navy">Designed for <span
+            class="italic text-gold">Excellence</span></h2>
+        <p class="mt-6 max-w-2xl mx-auto text-navy/70">Every detail considered. Every comfort delivered. Discover what
+          sets Northwold apart.</p>
+      </div>
+      <div id="amenitiesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="suites" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <div class="text-gold uppercase tracking-[0.3em] text-xs mb-4">Our Accommodations</div>
+        <h2 class="font-serif text-4xl md:text-6xl font-light text-navy">Curated <span
+            class="italic text-gold">Suites</span></h2>
+        <p class="mt-6 max-w-2xl mx-auto text-navy/70">Spacious, tastefully decorated, impeccably clean — each room is a
+          sanctuary unto itself.</p>
+      </div>
+      <div id="suitesGrid" class="grid md:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-24 md:py-32 bg-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5 pattern-dots"></div>
+    <div class="max-w-6xl mx-auto px-6 relative">
+      <div class="text-center mb-16 reveal">
+        <div class="text-gold uppercase tracking-[0.3em] text-xs mb-4">Guest Voices</div>
+        <h2 class="font-serif text-4xl md:text-6xl font-light">Stories of <span class="italic text-gold">Delight</span>
+        </h2>
+      </div>
+      <div class="relative">
+        <div id="testimonialTrack" class="overflow-hidden">
+          <div id="testimonialSlides" class="flex transition-transform duration-700 ease-out"></div>
+        </div>
+        <button id="prevTestimonial"
+          class="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gold text-navy flex items-center justify-center hover:scale-110 transition shadow-lg">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <button id="nextTestimonial"
+          class="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gold text-navy flex items-center justify-center hover:scale-110 transition shadow-lg">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="testimonialDots" class="flex justify-center gap-2 mt-10"></div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-24 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div class="reveal order-2 md:order-1">
+        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80"
+          class="rounded-3xl shadow-2xl w-full h-[600px] object-cover" alt="Pool">
+      </div>
+      <div class="reveal order-1 md:order-2">
+        <div class="text-gold uppercase tracking-[0.3em] text-xs mb-4">The Experience</div>
+        <h2 class="font-serif text-4xl md:text-6xl font-light leading-tight text-navy">A Pool That <span
+            class="italic text-gold">Never Sleeps</span></h2>
+        <p class="mt-8 text-lg text-navy/75 leading-relaxed font-light">
+          Our azure oasis is open around the clock — a rare gift in luxury hospitality. Whether you crave a sunrise
+          swim, a noon-day cool-down, or a moonlit float beneath the Ghanaian sky, Northwold's 24/7 pool is yours.
+        </p>
+        <ul class="mt-8 space-y-4">
+          <li class="flex gap-3 items-center"><i data-lucide="check-circle" class="w-5 h-5 text-gold"></i> Dedicated
+            children's safe zone</li>
+          <li class="flex gap-3 items-center"><i data-lucide="check-circle" class="w-5 h-5 text-gold"></i> Regularly
+            maintained crystal-clear water</li>
+          <li class="flex gap-3 items-center"><i data-lucide="check-circle" class="w-5 h-5 text-gold"></i> Poolside bar
+            service</li>
+          <li class="flex gap-3 items-center"><i data-lucide="check-circle" class="w-5 h-5 text-gold"></i> Stunning
+            views perfect for memorable moments</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <div class="text-gold uppercase tracking-[0.3em] text-xs mb-4">Reservations & Contact</div>
+        <h2 class="font-serif text-4xl md:text-6xl font-light text-navy">Plan Your <span
+            class="italic text-gold">Visit</span></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="contact-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition reveal">
+          <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-5"><i data-lucide="map-pin"
+              class="w-6 h-6 text-gold"></i></div>
+          <h3 class="font-serif text-2xl text-navy mb-2">Location</h3>
+          <p class="text-navy/70">Northwold Hotel<br>Sotuom, Accra<br>Ghana</p>
+        </div>
+        <div class="contact-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition reveal">
+          <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-5"><i data-lucide="phone"
+              class="w-6 h-6 text-gold"></i></div>
+          <h3 class="font-serif text-2xl text-navy mb-2">Reservations</h3>
+          <a href="tel:+233 59 897 1690" class="text-navy/70 hover:text-gold transition block">+233 59 897 1690</a>
+          <p class="text-sm text-navy/50 mt-1">Available 24/7</p>
+        </div>
+        <div class="contact-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition reveal">
+          <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-5"><i data-lucide="mail"
+              class="w-6 h-6 text-gold"></i></div>
+          <h3 class="font-serif text-2xl text-navy mb-2">Email</h3>
+          <a href="mailto:reservations@northwoldhotel.com"
+            class="text-navy/70 hover:text-gold transition break-all">reservations@northwoldhotel.com</a>
+        </div>
+      </div>
+      <div class="mt-12 text-center reveal">
+        <button onclick="document.getElementById('openBooking').click()"
+          class="bg-navy text-gold px-10 py-4 rounded-full font-semibold tracking-wide hover:bg-gold hover:text-navy transition-all duration-300 shadow-xl inline-flex items-center gap-2">
+          <i data-lucide="calendar-check" class="w-5 h-5"></i>
+          Make a Reservation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy text-white py-12 border-t border-gold/20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold flex items-center justify-center"><span
+              class="font-serif text-navy text-xl font-bold">N</span></div>
+          <div>
+            <div class="font-serif text-xl">Northwold Hotel</div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-gold">Sotuom · Accra</div>
+          </div>
+        </div>
+        <p class="text-white/60 max-w-md">Where serenity meets sophistication. Your sanctuary in the heart of Ghana.</p>
+      </div>
+      <div>
+        <h4 class="font-serif text-gold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="#about" class="hover:text-gold">About Us</a></li>
+          <li><a href="#amenities" class="hover:text-gold">Amenities</a></li>
+          <li><a href="#suites" class="hover:text-gold">Suites</a></li>
+          <li><a href="#contact" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-gold mb-4">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold hover:text-navy hover:border-gold transition"><i
+              data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold hover:text-navy hover:border-gold transition"><i
+              data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold hover:text-navy hover:border-gold transition"><i
+              data-lucide="twitter" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/40">
+      © 2026 Northwold Hotel. All rights reserved. Crafted with care.
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+    <div class="absolute inset-0 bg-navy/80 backdrop-blur-sm modal-overlay"></div>
+    <div class="relative bg-white max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl modal-content">
+      <button id="closeBooking"
+        class="absolute top-4 right-4 w-10 h-10 rounded-full bg-cream hover:bg-navy hover:text-gold flex items-center justify-center transition z-10">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="p-8 md:p-12">
+        <div class="text-center mb-8">
+          <div class="text-gold uppercase tracking-[0.3em] text-xs mb-2">Reservation</div>
+          <h3 class="font-serif text-3xl md:text-4xl text-navy">Book Your <span class="italic text-gold">Stay</span>
+          </h3>
+          <p class="text-navy/60 mt-2 text-sm">Complete the form below and our team will confirm shortly.</p>
+        </div>
+        <form id="bookingForm" class="space-y-5">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="form-field">
+              <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Full Name *</label>
+              <input type="text" name="fullName" required
+                class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition">
+            </div>
+            <div class="form-field">
+              <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Email *</label>
+              <input type="email" name="email" required
+                class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition">
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Phone Number *</label>
+            <input type="tel" name="phone" required
+              class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition">
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="form-field">
+              <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Check-in *</label>
+              <input type="date" name="checkin" required
+                class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition">
+            </div>
+            <div class="form-field">
+              <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Check-out *</label>
+              <input type="date" name="checkout" required
+                class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition">
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="form-field">
+              <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Room Preference</label>
+              <select name="room"
+                class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition bg-white">
+                <option value="standard">Standard Suite</option>
+                <option value="executive">Executive Suite</option>
+                <option value="luxury">Luxury Suite</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Purpose of Stay</label>
+              <select name="purpose"
+                class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition bg-white">
+                <option value="vacation">Vacation</option>
+                <option value="business">Business</option>
+                <option value="event">Event Inquiry</option>
+                <option value="couple">Romantic Getaway</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="block text-xs uppercase tracking-widest text-navy/60 mb-2">Special Requests</label>
+            <textarea name="requests" rows="3" placeholder="Dietary requirements, airport pickup, event details..."
+              class="w-full px-4 py-3 border border-navy/20 rounded-lg focus:border-gold focus:outline-none transition resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-navy text-gold py-4 rounded-full font-semibold tracking-wide hover:bg-gold hover:text-navy transition-all duration-300 flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            Submit Reservation
+          </button>
+        </form>
+        <div id="bookingSuccess" class="hidden text-center py-12">
+          <div class="w-20 h-20 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-6">
+            <i data-lucide="check" class="w-10 h-10 text-gold"></i>
+          </div>
+          <h3 class="font-serif text-3xl text-navy mb-3">Reservation Received</h3>
+          <p class="text-navy/70 max-w-md mx-auto">Thank you. Our reservations team will contact you within 24 hours to
+            confirm your stay at Northwold Hotel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="app.js?v=1.1"></script>
+</body>
+
+</html>
